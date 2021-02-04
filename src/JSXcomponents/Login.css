@@ -1,0 +1,188 @@
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    
+}
+h1,p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+
+.box {
+    width: 500px;
+    padding: 40px;
+    position: relative;
+    box-sizing: border-box;
+     /* top: 50%; */
+    left:30%; 
+    right: 30%;
+    /* background: #999999; */
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px
+ 
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(60, 231, 103);
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s
+    
+}
+
+.box h1 {
+    color: rgb(31, 231, 81);
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #694400;
+    
+}
+
+.box input[type="submit"] {
+    
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 40px;
+    outline: none;
+    background-color: rgb(31, 231, 81);
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: #ffffff;
+    color: black
+}
+
+.forgot {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline
+    
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0
+}
+.loginB{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 40px;
+    outline: none;
+    background-color: rgb(31, 231, 81);
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+button:hover{
+    background: #ffffff;
+    color: black
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s
+}
+
+.social-circle i {
+    color: rgb(31, 231, 81);
+    transition: all 0.10s;
+    transition: all 0.6s
+}
+@media (max-width: 920px){
+    .box {
+        width: 350px;
+        padding: 0px;
+        position: relative;
+        box-sizing: border-box;
+         top: 50%;
+        left:0%; 
+        right: 0%;
+        /* background: #999999; */
+        text-align: center;
+        transition: 0.25s;
+        margin-top: 100px
+    }
+}

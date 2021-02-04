@@ -1,0 +1,156 @@
+
+   
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+  }
+  /* Columns */
+.left-column {
+    width: 50%;
+    position: relative;
+  }
+   
+  .right-column {
+    width: 50%;
+    margin-top: 60px;
+  }
+  /* Left Column */
+.left-column img {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease;
+  }
+   
+  .left-column img.active {
+    opacity: 1;
+  }
+  /* Product Description */
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+  }
+  .product-description span {
+    font-size: 12px;
+    color: #d5ffd7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .product-description h1 {
+    font-weight: 300;
+    font-size: 52px;
+    color: #000000;
+    letter-spacing: -2px;
+  }
+  .product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #272727;
+    line-height: 24px;
+  }
+  /* Product Price */
+.product-price {
+    display: flex;
+    align-items: center;
+  }
+   
+  .product-price span {
+    font-size: 45px;
+    font-weight: 300;
+    color: #0c0c0c;
+    margin-right: 20px;
+  }
+   
+  .cart-btn {
+    display: inline-block;
+    background-color: #7DC855;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+  }
+  .cart-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  /* Cable Configuration */
+.cable-choose {
+    margin-bottom: 20px;
+  }
+   
+  .cable-choose button {
+    border: 2px solid #59ff00;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #7DC855;
+    cursor: pointer;
+    transition: all .5s;
+  }
+   
+  .cable-choose button:hover,
+  .cable-choose button:active,
+  .cable-choose button:focus {
+    border: 2px solid #000000;
+    outline: none;
+  }
+   
+  .cable-config {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+  }
+   
+  .cable-config a {
+    color: #ceffbb;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+  }
+  /* .cable-config a:before {
+    content:&amp;quot;?&amp;quot;;
+    height:15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(53, 142, 215, 0.5);
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    opacity: 0.5;
+    margin-right: 5px;
+  } */
+  /* Responsive */
+@media (max-width: 940px) {
+    .container {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+   
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+   
+    .left-column img {
+      width: 300px;
+      right: 0;
+      top: -65px;
+      left: initial;
+    }
+  }
+   
+  @media (max-width: 535px) {
+    .left-column img {
+      width: 220px;
+      top: -85px;
+    }
+  }
+ 
